@@ -28,13 +28,13 @@ wget https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zi
 
 echo 正在下载配置文件. . .
 
-curl -sSL https://hxhgts.github.io/Xray-SelfUse/services/xray.service > /etc/systemd/system/xray.service
+curl -sSL https://hxhgts.github.io/XrayInstall/services/xray.service > /etc/systemd/system/xray.service
 
-curl -sSL https://hxhgts.github.io/Xray-SelfUse/services/xray@.service > /etc/systemd/system/xray@.service
+curl -sSL https://hxhgts.github.io/XrayInstall/services/xray@.service > /etc/systemd/system/xray@.service
 
-curl -sSL https://hxhgts.github.io/Xray-SelfUse/services/xray.service.d/10-donot_touch_single_conf.conf > /etc/systemd/system/xray.service.d/10-donot_touch_single_conf.conf
+curl -sSL https://hxhgts.github.io/XrayInstall/services/xray.service.d/10-donot_touch_single_conf.conf > /etc/systemd/system/xray.service.d/10-donot_touch_single_conf.conf
 
-curl -sSL https://hxhgts.github.io/Xray-SelfUse/services/xray@.service.d/10-donot_touch_single_conf.conf > /etc/systemd/system/xray@.service.d/10-donot_touch_single_conf.conf
+curl -sSL https://hxhgts.github.io/XrayInstall/services/xray@.service.d/10-donot_touch_single_conf.conf > /etc/systemd/system/xray@.service.d/10-donot_touch_single_conf.conf
 
 systemctl daemon-reload
 
