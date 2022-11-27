@@ -1,6 +1,6 @@
 # XrayInstall
 
-安装Xray最新版
+安装Xray最新版,适用于debian10/11
 
 安装命令:
 
