@@ -1,5 +1,17 @@
 #!/bin/sh
 
+echo 正在配置IPV6安装环境. . .
+
+cp -f /etc/resolv.conf /etc/resolv.conf.bak
+
+echo 'nameserver 2606:4700:4700::1111' > /etc/resolv.conf
+
+echo 'nameserver 2606:4700:4700::1001' >> /etc/resolv.conf
+
+echo 'nameserver 2001:4860:4860::8888' >> /etc/resolv.conf
+
+echo 'nameserver 2001:4860:4860::8844' >> /etc/resolv.conf
+
 echo 正在清理已安装xray. . .
 
 systemctl disable xray
@@ -61,6 +73,10 @@ echo 正在清理残余文件. . .
 rm -rf /var/tmp/xray
 
 rm -f /var/tmp/Xray-linux-64.zip
+
+echo 正在恢复IPV6网络环境. . .
+
+cp -f /etc/resolv.conf.bak /etc/resolv.conf
 
 echo Xray 安装成功!
 
