@@ -36,7 +36,7 @@ apt install wget unzip -y
 
 echo 正在下载最新版Xray X64. . .
 
-wget https://summer-poetry-7fa8.qq0mjpmkt9z.workers.dev/XTLS/Xray-core/releases/download/v1.6.5/Xray-linux-64.zip -O /var/tmp/Xray-linux-64.zip
+wget https://summer-poetry-7fa8.qq0mjpmkt9z.workers.dev/XTLS/Xray-core/releases/download/v1.6.6-2/Xray-linux-64.zip -O /var/tmp/Xray-linux-64.zip
 
 echo 正在下载配置文件. . .
 
