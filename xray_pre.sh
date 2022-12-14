@@ -20,11 +20,19 @@ mkdir -p /etc/systemd/system/xray.service.d
 
 mkdir -p /etc/systemd/system/xray@.service.d
 
-apt install wget unzip -y
+apt install wget unzip sed grep -y
 
 echo 正在下载最新测试版Xray X64. . .
 
-wget https://github.com/XTLS/Xray-core/releases/download/v1.6.6-2/Xray-linux-64.zip -O /var/tmp/Xray-linux-64.zip
+curl https://api.github.com/repos/XTLS/Xray-core/releases | grep "Xray-linux-64.zip" | grep "browser_download_url" | grep -v "dgst" > /var/tmp/GetXrayURL.txt
+
+sed -i '2,$d' /var/tmp/GetXrayURL.txt
+
+sed -i "s/        \"browser_download_url\": \"//" /var/tmp/GetXrayURL.txt
+
+sed -i "s/\"//" /var/tmp/GetXrayURL.txt
+
+wget -i /var/tmp/GetXrayURL.txt -O /var/tmp/Xray-linux-64.zip
 
 echo 正在下载配置文件. . .
 
