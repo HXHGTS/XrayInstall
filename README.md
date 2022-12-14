@@ -41,3 +41,15 @@ curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray_update.
 ```
 curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray6_update.sh | bash
 ```
+
+测试版（IPV4网络）:
+
+```
+curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray_pre_update.sh | bash
+```
+
+测试版（IPV6单栈网络）:
+
+```
+curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray6_pre_update.sh | bash
+```
