@@ -22,7 +22,7 @@ echo 正在进行更新前准备. . .
 
 mkdir -p /var/tmp/xray
 
-apt install wget unzip -y
+apt install wget unzip sed grep -y
 
 echo 正在下载最新版Xray X64. . .
 
