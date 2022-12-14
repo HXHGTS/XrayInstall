@@ -68,6 +68,8 @@ echo 正在清理残余文件. . .
 
 rm -rf /var/tmp/xray
 
+rm -f /var/tmp/GetXrayURL.txt
+
 rm -f /var/tmp/Xray-linux-64.zip
 
 echo Xray 安装成功!
