@@ -8,6 +8,8 @@ systemctl stop xray
 
 echo 正在进行更新前准备. . .
 
+mkdir -p /var/tmp/xray
+
 apt install wget unzip -y
 
 echo 正在下载最新版Xray X64. . .
