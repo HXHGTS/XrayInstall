@@ -8,10 +8,6 @@ echo 'nameserver 2606:4700:4700::1111' > /etc/resolv.conf
 
 echo 'nameserver 2606:4700:4700::1001' >> /etc/resolv.conf
 
-echo 'nameserver 2001:4860:4860::8888' >> /etc/resolv.conf
-
-echo 'nameserver 2001:4860:4860::8844' >> /etc/resolv.conf
-
 echo 正在关闭xray. . .
 
 systemctl disable xray
