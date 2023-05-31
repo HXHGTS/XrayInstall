@@ -60,7 +60,7 @@ chmod +x /usr/local/bin/xray
 
 wget -O /usr/local/share/xray/geoip.dat https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
 
-wget -O /usr/local/share/xray/geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+wget -O /usr/local/share/xray/geosite.dat https://summer-poetry-7fa8.qq0mjpmkt9z.workers.dev/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
 
 echo '{}' > /usr/local/etc/xray/config.json
 
