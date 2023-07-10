@@ -10,6 +10,8 @@ rm -rf /usr/local/etc/xray
 
 rm -rf /usr/local/share/xray
 
+rm -f /usr/local/bin/xray
+
 echo 正在删除服务. . .
 
 rm -f /etc/systemd/system/xray.service
