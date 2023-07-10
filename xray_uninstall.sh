@@ -12,7 +12,7 @@ rm -rf /usr/local/share/xray
 
 apt install wget unzip -y
 
-echo 正在下载配置文件. . .
+echo 正在删除服务. . .
 
 rm -f /etc/systemd/system/xray.service
 
