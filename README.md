@@ -57,5 +57,5 @@ curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray6_pre_up
 ### 3.卸载
 
 ```
-https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray_uninstall.sh | bash
+curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray_uninstall.sh | bash
 ```
