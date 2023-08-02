@@ -13,7 +13,7 @@ curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray.sh | ba
 正式版（IPV6单栈网络）:
 
 ```
-curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray6.sh | bash
+curl -sSL https://cdn.jsdelivr.net/gh/HXHGTS/XrayInstall@main/xray6_update.sh | bash
 ```
 
 测试版（IPV4网络）:
