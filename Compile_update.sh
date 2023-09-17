@@ -1,10 +1,10 @@
 #!/bin/sh
 
-echo '正在关闭/卸载xray核心. . .'
+echo '正在进行数据库更新. . .'
 
-systemctl stop xray
+wget -O /usr/local/share/xray/geoip.dat https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
 
-systemctl disable xray
+wget -O /usr/local/share/xray/geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
 
 echo '正在安装/升级必需插件. . .'
 
@@ -40,15 +40,15 @@ cd Xray-core && go mod download
 
 env GOOS=linux GOARCH=amd64 GOAMD64=v3 CGO_ENABLED=0 go build -o xray_v3 -trimpath -ldflags "-s -w -buildid=" ./main
 
+echo '正在关闭/卸载xray核心. . .'
+
+systemctl stop xray
+
+systemctl disable xray
+
 mv -f xray_v3 /usr/local/bin/xray
 
 chmod +x /usr/local/bin/xray
-
-echo 正在进行数据库更新. . .
-
-wget -O /usr/local/share/xray/geoip.dat https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
-
-wget -O /usr/local/share/xray/geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
 
 systemctl enable xray
 
