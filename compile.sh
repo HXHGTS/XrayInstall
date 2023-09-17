@@ -56,7 +56,7 @@ env GOOS=windows GOARCH=amd64 GOAMD64=v3 CGO_ENABLED=0 go build -v -o wxray_v3.e
 
 env GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -v -o wxray.exe -trimpath -ldflags "-s -w -H windowsgui -buildid=" ./main
 
-mv -f xray /usr/local/bin/xray
+mv -f xray_v3 /usr/local/bin/xray
 
 chmod +x /usr/local/bin/xray
 
