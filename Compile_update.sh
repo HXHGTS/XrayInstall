@@ -68,7 +68,7 @@ systemctl restart xray
 
 echo -------Xray版本号-------
 
-xray --version | grep Xray
+xray --version
 
 echo 
 
