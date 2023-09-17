@@ -50,17 +50,7 @@ env GOOS=windows GOARCH=amd64 GOAMD64=v3 CGO_ENABLED=0 go build -o xray_v3.exe -
 
 env GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -o xray.exe -trimpath -ldflags "-s -w -buildid=" ./main
 
-mkdir -p /root/go/bin/windows_amd64
-
-mv -f /root/Xray-core/xray_v3 /root/go/bin/xray_v3
-
-mv -f /root/Xray-core/xray /root/go/bin/xray
-
-mv -f /root/Xray-core/xray_v3.exe /root/go/bin/xray_v3.exe
-
-mv -f /root/Xray-core/xray.exe /root/go/bin/xray.exe
-
-mv -f /root/go/bin/xray /usr/local/bin/xray
+mv -f xray /usr/local/bin/xray
 
 chmod +x /usr/local/bin/xray
 
