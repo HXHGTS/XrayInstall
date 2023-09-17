@@ -2,7 +2,7 @@
 
 安装Xray最新版,适用于debian10/11
 
-### 1.全新安装(编译安装)
+### 1.全新安装(编译安装AMD64 V3)
 
 ```
 curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/Compile.sh | bash
@@ -34,7 +34,7 @@ curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray_pre.sh 
 curl -sSL https://cdn.jsdelivr.net/gh/HXHGTS/XrayInstall@main/xray6_pre.sh | bash
 ```
 
-### 2.更新(编译安装)
+### 2.更新(编译安装AMD64 V3)
 
 ```
 curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/Compile_update.sh | bash
