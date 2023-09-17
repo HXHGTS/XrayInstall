@@ -50,18 +50,6 @@ mv -f xray_v3 /usr/local/bin/xray
 
 chmod +x /usr/local/bin/xray
 
-NeedReinstall=$(xray --version)
-
-if [ ${NeedReinstall} = "This program can only be run on AMD64 processors with v3 microarchitecture support." ]; then
-
-  cd Xray-core && env GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o xray -trimpath -ldflags "-s -w -buildid=" ./main
-  
-  mv -f xray /usr/local/bin/xray
-  
-  chmod +x /usr/local/bin/xray
-  
-fi
-
 systemctl enable xray
 
 systemctl restart xray
