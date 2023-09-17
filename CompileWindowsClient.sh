@@ -4,9 +4,7 @@ echo '正在安装/升级必需插件. . .'
 
 apt update
 
-apt install -y curl wget tar gawk sed
-
-apt install -y git build-essential
+apt install -y curl wget tar gawk sed git
 
 echo '正在安装/升级go. . .'
 
