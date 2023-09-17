@@ -5,7 +5,7 @@
 ### 1.全新安装(编译安装)
 
 ```
-curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/compile.sh | bash
+curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/Compile.sh | bash
 ```
 
 ### 1.全新安装(二进制安装)
@@ -37,7 +37,7 @@ curl -sSL https://cdn.jsdelivr.net/gh/HXHGTS/XrayInstall@main/xray6_pre.sh | bas
 ### 2.更新(编译安装)
 
 ```
-curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/compile_update.sh | bash
+curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/Compile_update.sh | bash
 ```
 
 ### 2.更新(二进制安装)
