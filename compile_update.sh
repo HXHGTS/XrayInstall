@@ -68,7 +68,7 @@ wget -O /usr/local/share/xray/geosite.dat https://github.com/Loyalsoldier/v2ray-
 
 systemctl enable xray
 
-systemctl restart sing-box
+systemctl restart xray
 
 echo -------Xray版本号-------
 
