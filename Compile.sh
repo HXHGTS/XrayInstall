@@ -90,7 +90,7 @@ systemctl start xray
 
 echo -------Xray版本号-------
 
-xray --version | grep Xray
+xray --version
 
 echo 
 
