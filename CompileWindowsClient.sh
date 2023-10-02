@@ -36,14 +36,14 @@ cd Xray-core && go mod download
 
 echo '正在编译Windows版xray核心. . .'
 
-env GOOS=windows GOARCH=amd64 GOAMD64=v3 CGO_ENABLED=0 go build -o xray_v3.exe -trimpath -ldflags "-s -w -buildid=" ./main
+env GOOS=windows GOARCH=amd64 GOAMD64=v3 CGO_ENABLED=0 go build -o xray.exe -trimpath -ldflags "-s -w -buildid=" ./main
 
-env GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -o xray.exe -trimpath -ldflags "-s -w -buildid=" ./main
+#env GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -o xray.exe -trimpath -ldflags "-s -w -buildid=" ./main
 
 echo '正在编译Windows版wxray核心. . .'
 
-env GOOS=windows GOARCH=amd64 GOAMD64=v3 CGO_ENABLED=0 go build -v -o wxray_v3.exe -trimpath -ldflags "-s -w -H windowsgui -buildid=" ./main
+env GOOS=windows GOARCH=amd64 GOAMD64=v3 CGO_ENABLED=0 go build -v -o wxray.exe -trimpath -ldflags "-s -w -H windowsgui -buildid=" ./main
 
-env GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -v -o wxray.exe -trimpath -ldflags "-s -w -H windowsgui -buildid=" ./main
+#env GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -v -o wxray.exe -trimpath -ldflags "-s -w -H windowsgui -buildid=" ./main
 
 exit 0
