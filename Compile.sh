@@ -34,6 +34,8 @@ go version
 
 echo '正在编译linux版xray核心. . .'
 
+rm -rf /root/Xray-core
+
 git clone https://github.com/XTLS/Xray-core.git
 
 cd Xray-core && go mod download
