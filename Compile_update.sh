@@ -40,7 +40,7 @@ git clone https://github.com/XTLS/Xray-core.git
 
 cd Xray-core && go mod download
 
-env GOOS=linux GOARCH=amd64 GOAMD64=v3 CGO_ENABLED=0 go build -o xray_v3 -trimpath -ldflags "-s -w -buildid=" ./main
+env GOOS=linux GOARCH=amd64 GOAMD64=v3 CGO_ENABLED=0 go build -o xray -trimpath -ldflags "-s -w -buildid=" ./main
 
 echo '正在关闭/卸载xray核心. . .'
 
@@ -48,7 +48,7 @@ systemctl stop xray
 
 systemctl disable xray
 
-mv -f xray_v3 /usr/local/bin/xray
+mv -f xray /usr/local/bin/xray
 
 chmod +x /usr/local/bin/xray
 
