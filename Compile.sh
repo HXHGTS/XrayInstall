@@ -66,7 +66,7 @@ curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/services/xra
 
 curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/services/xray@.service.d/10-donot_touch_single_conf.conf > /etc/systemd/system/xray@.service.d/10-donot_touch_single_conf.conf
 
-wget -O /usr/local/share/xray/geoip.dat https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
+wget -O /usr/local/share/xray/geoip.dat https://github.com/Loyalsoldier/geoip/releases/latest/download/geoip.dat
 
 wget -O /usr/local/share/xray/geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
 
