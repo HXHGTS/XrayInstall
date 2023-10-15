@@ -28,7 +28,7 @@ mv -f /var/tmp/xray/xray /usr/local/bin/xray
 
 chmod +x /usr/local/bin/xray
 
-wget -O /usr/local/share/xray/geoip.dat https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
+wget -O /usr/local/share/xray/geoip.dat https://github.com/Loyalsoldier/geoip/releases/latest/download/geoip.dat
 
 wget -O /usr/local/share/xray/geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
 
