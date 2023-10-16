@@ -20,6 +20,8 @@ rm -f /var/tmp/Xray-linux-64.zip
 
 rm -f /var/tmp/GetXrayURL.txt
 
+rm -rf /root/Xray-core
+
 echo 正在删除服务. . .
 
 rm -f /etc/systemd/system/xray.service
