@@ -4,6 +4,12 @@
 
 ### 1.全新安装(编译安装AMD64 V3)
 
+首次运行(Go环境安装)
+
+```
+curl -sSL https://raw.githubusercontent.com/HXHGTS/Singbox-Install/main/sh/go_install.sh | bash
+```
+
 ```
 curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/Compile.sh | bash
 ```
