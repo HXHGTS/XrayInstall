@@ -6,23 +6,9 @@ apt update
 
 apt install -y curl wget tar gawk sed git
 
-echo '正在安装/升级go. . .'
+echo '正在打开Go环境. . .'
 
-apt remove -y --purge golang
-
-apt autoremove -y
-
-rm -rf /usr/local/go
-
-Go_Version=$(curl https://github.com/golang/go/tags | grep '/releases/tag/go' | head -n 1 | gawk -F/ '{print $6}' | gawk -F\" '{print $1}')
-
-wget -O /var/tmp/${Go_Version}.linux-amd64.tar.gz https://go.dev/dl/${Go_Version}.linux-amd64.tar.gz
-
-tar -C /usr/local -xzf /var/tmp/${Go_Version}.linux-amd64.tar.gz
-
-rm -f /var/tmp/${Go_Version}.linux-amd64.tar.gz
-
-export PATH=$PATH:/usr/local/go/bin
+source /root/.bashrc
 
 go version
 
