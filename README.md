@@ -77,3 +77,9 @@ curl -sSL https://cdn.jsdelivr.net/gh/HXHGTS/XrayInstall@main/xray6_pre_update.s
 ```
 curl -sSL https://cdn.jsdelivr.net/gh/HXHGTS/XrayInstall@main/xray_uninstall.sh | bash
 ```
+
+### 4.编译Windows AMDV3客户端
+
+```
+curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/CompileWindowsClient.sh | bash
+```
