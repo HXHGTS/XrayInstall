@@ -72,7 +72,7 @@ wget -O /usr/local/share/xray/geoip.dat https://summer-poetry-7fa8.qq0mjpmkt9z.w
 
 wget -O /usr/local/share/xray/geosite.dat https://summer-poetry-7fa8.qq0mjpmkt9z.workers.dev/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
 
-echo '{}' > /usr/local/etc/xray/config.json
+echo '{}' > /usr/local/etc/xray/config.jsonc
 
 systemctl enable xray
 
