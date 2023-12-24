@@ -54,7 +54,7 @@ wget -O /usr/local/share/xray/geoip.dat https://github.com/Loyalsoldier/geoip/re
 
 wget -O /usr/local/share/xray/geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
 
-echo '{}' > /usr/local/etc/xray/config.json
+echo '{}' > /usr/local/etc/xray/config.jsonc
 
 systemctl enable xray
 
