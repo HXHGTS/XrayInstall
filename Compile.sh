@@ -2,9 +2,7 @@
 
 echo '正在关闭/卸载xray核心. . .'
 
-systemctl stop xray
-
-systemctl disable xray
+curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray_uninstall.sh | bash
 
 echo '正在安装/升级必需插件. . .'
 
