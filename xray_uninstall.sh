@@ -16,6 +16,8 @@ rm -f /usr/local/bin/xray
 
 rm -rf /var/tmp/xray
 
+rm -rf /var/log/xray
+
 rm -f /var/tmp/Xray-linux-64.zip
 
 rm -f /var/tmp/GetXrayURL.txt
