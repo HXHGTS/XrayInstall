@@ -30,6 +30,9 @@ echo 正在清理残余文件. . .
 rm -rf /var/tmp/xray
 rm -f /var/tmp/Xray-linux-64.zip
 
+echo 正在启动xray. . .
+systemctl enable xray --now
+
 echo Xray 更新成功!
 
 echo -------Xray版本号-------
