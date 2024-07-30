@@ -4,7 +4,9 @@ echo 正在配置IPV6安装环境. . .
 
 cp -f /etc/resolv.conf /etc/resolv.conf.bak
 
-echo 'nameserver 2606:4700:4700::1111' > /etc/resolv.conf
+echo 'nameserver 2a00:1098:2b::1' > /etc/resolv.conf
+
+echo 'nameserver 2606:4700:4700::1111' >>/etc/resolv.conf
 
 echo 'nameserver 2606:4700:4700::1001' >> /etc/resolv.conf
 
@@ -29,8 +31,6 @@ sed -i '2,$d' /var/tmp/GetXrayURL.txt
 sed -i "s/        \"browser_download_url\": \"//" /var/tmp/GetXrayURL.txt
 
 sed -i "s/\"//" /var/tmp/GetXrayURL.txt
-
-sed -i "s/github.com/summer-poetry-7fa8.qq0mjpmkt9z.workers.dev/" /var/tmp/GetXrayURL.txt
 
 wget -i /var/tmp/GetXrayURL.txt -O /var/tmp/Xray-linux-64.zip
 
