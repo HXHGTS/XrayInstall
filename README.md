@@ -25,7 +25,7 @@ curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray.sh | ba
 正式版（IPV6单栈网络）:
 
 ```
-curl -sSL https://cdn.jsdelivr.net/gh/HXHGTS/XrayInstall@main/xray6_update.sh | bash
+curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray6_update.sh | bash
 ```
 
 测试版（IPV4网络）:
@@ -37,7 +37,7 @@ curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray_pre.sh 
 测试版（IPV6单栈网络）:
 
 ```
-curl -sSL https://cdn.jsdelivr.net/gh/HXHGTS/XrayInstall@main/xray6_pre.sh | bash
+curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray6_pre.sh | bash
 ```
 
 ### 2.更新(编译安装AMD64 V3)
@@ -57,7 +57,7 @@ curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray_update.
 正式版（IPV6单栈网络）:
 
 ```
-curl -sSL https://cdn.jsdelivr.net/gh/HXHGTS/XrayInstall@main/xray6_update.sh | bash
+curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray6_update.sh | bash
 ```
 
 测试版（IPV4网络）:
@@ -69,13 +69,13 @@ curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray_pre_upd
 测试版（IPV6单栈网络）:
 
 ```
-curl -sSL https://cdn.jsdelivr.net/gh/HXHGTS/XrayInstall@main/xray6_pre_update.sh | bash
+curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray6_pre_update.sh | bash
 ```
 
 ### 3.卸载
 
 ```
-curl -sSL https://cdn.jsdelivr.net/gh/HXHGTS/XrayInstall@main/xray_uninstall.sh | bash
+curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/xray_uninstall.sh | bash
 ```
 
 ### 4.编译Windows AMDV3客户端
