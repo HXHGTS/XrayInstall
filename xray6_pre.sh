@@ -35,7 +35,7 @@ echo 正在进行安装前准备. . .
 apt install wget unzip sed grep -y
 
 echo 正在下载最新版Xray X64. . .
-curl https://restless-wave-4c58.qq0mjpmkt9z.workers.dev/repos/XTLS/Xray-core/releases | grep "Xray-linux-64.zip" | grep "browser_download_url" | grep -v "dgst" >/var/tmp/GetXrayURL.txt
+curl https://api.github.com/repos/XTLS/Xray-core/releases | grep "Xray-linux-64.zip" | grep "browser_download_url" | grep -v "dgst" >/var/tmp/GetXrayURL.txt
 sed -i '2,$d' /var/tmp/GetXrayURL.txt
 sed -i "s/        \"browser_download_url\": \"//" /var/tmp/GetXrayURL.txt
 sed -i "s/\"//" /var/tmp/GetXrayURL.txt
