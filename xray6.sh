@@ -2,7 +2,8 @@
 
 echo 正在配置IPV6安装环境. . .
 cp -f /etc/resolv.conf /etc/resolv.conf.bak
-echo 'nameserver 2606:4700:4700::1111' >/etc/resolv.conf
+echo 'nameserver 2a00:1098:2b::1' > /etc/resolv.conf
+echo 'nameserver 2606:4700:4700::1111' >>/etc/resolv.conf
 echo 'nameserver 2606:4700:4700::1001' >>/etc/resolv.conf
 echo 'options timeout:1' >>/etc/resolv.conf
 echo 'options attempts:1' >>/etc/resolv.conf
@@ -34,7 +35,7 @@ echo 正在进行安装前准备. . .
 apt install wget unzip -y
 
 echo 正在下载最新版Xray X64. . .
-wget https://summer-poetry-7fa8.qq0mjpmkt9z.workers.dev/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip -O /var/tmp/Xray-linux-64.zip
+wget https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip -O /var/tmp/Xray-linux-64.zip
 
 echo 正在下载配置文件. . .
 curl -sSL https://raw.githubusercontent.com/HXHGTS/XrayInstall/main/services/xray.service >/etc/systemd/system/xray.service
