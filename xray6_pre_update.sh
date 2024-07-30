@@ -64,7 +64,7 @@ rm -f /var/tmp/GetXrayURL.txt
 
 echo 正在恢复IPV6网络环境. . .
 
-cp -f /etc/resolv.conf.bak /etc/resolv.conf
+mv -f /etc/resolv.conf.bak /etc/resolv.conf
 
 echo Xray 更新成功!
 
