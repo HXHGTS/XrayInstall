@@ -36,9 +36,9 @@ mv -f /var/tmp/xray/xray /usr/local/bin/xray
 
 chmod +x /usr/local/bin/xray
 
-wget -O /usr/local/share/xray/geoip.dat https://github.com/Loyalsoldier/geoip/releases/latest/download/geoip.dat
+wget -O /usr/local/share/xray/geoip.dat https://github.com/v2fly/geoip/releases/latest/download/geoip.dat
 
-wget -O /usr/local/share/xray/geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+wget -O /usr/local/share/xray/geosite.dat https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat
 
 systemctl enable xray
 

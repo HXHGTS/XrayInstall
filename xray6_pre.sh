@@ -58,8 +58,8 @@ rm -f /var/tmp/xray/geosite.dat
 mv -f /var/tmp/xray/xray /usr/local/bin/xray
 chmod +x /usr/local/bin/xray
 
-wget -O /usr/local/share/xray/geoip.dat https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat
-wget -O /usr/local/share/xray/geosite.dat https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat
+wget -O /usr/local/share/xray/geoip.dat https://cdn.jsdelivr.net/gh/v2fly/geoip@release/geoip.dat
+wget -O /usr/local/share/xray/geosite.dat https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@release/dlc.dat
 
 echo 正在清理残余文件. . .
 rm -rf /var/tmp/xray

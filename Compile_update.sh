@@ -2,9 +2,9 @@
 
 echo '正在进行数据库更新. . .'
 
-wget -O /usr/local/share/xray/geoip.dat https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
+wget -O /usr/local/share/xray/geoip.dat https://github.com/v2fly/geoip/releases/latest/download/geoip.dat
 
-wget -O /usr/local/share/xray/geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+wget -O /usr/local/share/xray/geosite.dat https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat
 
 echo '正在安装/升级必需插件. . .'
 
